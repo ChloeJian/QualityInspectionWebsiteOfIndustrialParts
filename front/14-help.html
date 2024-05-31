@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>质检反馈站-帮助</title>
+    <style>
+      * {
+        padding: 0;
+        margin: 0;
+      }
+
+      /* 1.定义版心为公共类 */
+      body {
+        color: #fff;
+      }
+
+      .w {
+        width: 1265px;
+        margin: auto;
+      }
+
+      li {
+        list-style: none;
+      }
+
+      a {
+        text-decoration: none;
+      }
+
+      /* 2.头部 */
+      .header {
+        height: 42px;
+        background-color: #f3f5f7;
+        margin: auto;
+        margin-bottom: 10px;
+        border-radius: 2px;
+      }
+
+      .logo {
+        float: left;
+        width: 170px;
+        height: 42px;
+        line-height: 42px;
+        padding-left: 20px;
+        background-color: #559cc3;
+      }
+
+      /* 导航栏  li+a*/
+      .nav {
+        /* 定义为浮动之后，块级元素具有行内块元素的性质，有多少字或者内容，撑起盒子多少宽度。 */
+        float: left;
+        margin-left: 60px;
+      }
+
+      .nav ul li {
+        float: left;
+        margin: 0 15px;
+      }
+
+      .nav ul li a {
+        display: block;
+        height: 42px;
+        /* 撑开盒子，不指定宽度 */
+        padding: 0 10px;
+        line-height: 42px;
+        font-size: 18px;
+        color: black;
+      }
+
+      .nav ul li a:hover {
+        border-bottom: 2px solid #00a4ff;
+        color: #00a4ff;
+      }
+
+      .user {
+        float: right;
+        line-height: 42px;
+        margin-right: 30px;
+        font-size: 14px;
+        color: #666;
+      }
+
+      .titleh1 {
+        height: 80px;
+        line-height: 80px;
+        background-color: #559cc3;
+        /* 文字不加粗 */
+        font-weight: 600;
+        /* 让文字水平居中 */
+        text-align: center;
+        box-shadow: 0 2px 3px 3px rgba(0, 0, 0, 0.1);
+      }
+
+      .box {
+        background-color: #fff;
+      }
+
+      .words {
+        padding: 50px;
+        color: #000;
+        margin-top: 10px;
+      }
+
+      .box-hd {
+        height: 60px;
+        line-height: 60px;
+        margin-top: 20px;
+        background-color: #f3f5f7;
+        box-shadow: 0 2px 3px 3px rgba(0, 0, 0, 0.1);
+      }
+
+      .box-hd h2 {
+        float: left;
+        padding-left: 20px;
+        color: #3f4042;
+      }
+
+      .box-hd a {
+        float: right;
+        padding-right: 20px;
+        font-style: italic;
+        color: #498aad;
+      }
+
+      .box-hd a:hover {
+        text-decoration: underline;
+        color: #2b5166;
+      }
+
+      .box-bd1 {
+        height: 340px;
+        margin-top: 20px;
+      }
+
+      .box-bd1 ul li {
+        float: left;
+        margin-left: 123px;
+        margin-bottom: 23px;
+        width: 256px;
+        height: 320px;
+        background-color: #f3f5f7;
+        box-shadow: 3px 3px 3px 3px rgba(0, 0, 0, 0.1);
+        /* border-radius: 5px; */
+      }
+
+      .photo {
+        width: 256px;
+        height: 256px;
+      }
+
+      .box-bd1-instruction {
+        width: 256px;
+        height: 55px;
+        text-align: center;
+        line-height: 55px;
+        color: #000;
+      }
+
+      .footer {
+        height: 200px;
+        margin-top: 40px;
+        background-color: #f3f5f7;
+        padding-top: 50px;
+      }
+
+      .copyright {
+        float: left;
+        margin-left: 375px;
+      }
+
+      .copyright .logo1 {
+        float: left;
+        width: 120px;
+        height: 42px;
+        line-height: 42px;
+        text-align: center;
+        background-color: #559cc3;
+        border-radius: 2px;
+      }
+
+      .copyright p {
+        font-size: 12px;
+        color: #666;
+        margin-top: 60px;
+      }
+
+      .links {
+        float: right;
+        margin-right: 400px;
+      }
+
+      .links dl dt {
+        font-size: 16px;
+        color: #333;
+        margin-bottom: 5px;
+      }
+
+      .links dl dd a {
+        font-style: italic;
+        font-size: 12px;
+        color: #333;
+      }
+
+      .links dl dd a:hover {
+        text-decoration: underline;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- 头部区域 -->
+    <div class="w header">
+      <div class="logo">质检反馈站</div>
+      <div class="nav">
+        <ul>
+          <!-- li是块级元素，给li加浮动 -->
+          <!-- 给a设置宽（字数会影响）和高，转换成块级元素 -->
+          <li><a href="00-index.html">首页</a></li>
+          <li><a href="13-techinfo.html">技术简介</a></li>
+          <li><a href="14-help.html">帮助</a></li>
+          <li><a href="15-aboutus.html">关于我们-保密</a></li>
+        </ul>
+      </div>
+      <!-- 登录用户 -->
+      <div class="user"></div>
+    </div>
+    <!-- 头部区域结束 -->
+    <h1 class="titleh1 w">帮助</h1>
+    <!-- box区域 -->
+    <div class="box w">
+      <div class="words">
+        本作品按功能划分板块进行设计，3个板块分别为：待测物件的图像捕获与剪裁、基于嵌入式深度学习的缺陷检测、缺陷检测结果的可视化网页展示。
+        第1个板块的功能是图像捕获与剪裁，使连接到瑞萨RZ/G2L开发平台的摄像头实时获取画面，经过裁剪、缩放后输出待测物件图像，将待测图像保存至开发平台的指定文件夹。
+        第2个板块的功能是缺陷检测，将Jetson Orin中训练测试后的模型嵌入式移植到瑞萨RZ/G2L开发平台，随后从开发平台指定文件夹抓取待测图像，输入移植到开发平台的模型进行测试，最终输出综合异常热力图、综合热力实物合成图、各尺度层次缺陷热力图，并保存至开发平台的指定文件夹。
+        第3个板块的功能是Web质检展示，使PC端和瑞萨RZ/G2L开发平台局域网共享，在PC端通过samba服务访问开发平台的指定文件夹，抓取系列缺陷检测结果的输出图像，点击“生成报告”后，展示在“质检反馈站”首页。工业质检中的性能指标一般是漏检率、误检率、准确率。但由于现目前我们没有工业级流水的环境，待测产品的数目过少，所以只能对几件物件样品进行多次重复的缺陷检测，从而获得准确率等指标。
+        本作品的主要功能是对小物件产品进行缺陷检测，缺陷检测模型的性能是影响本作品性能的核心因素，我们可以根据模型性能来评判作品性能。因此，我们采用评判模型性能的图像级AU-ROC
+        ，像素级AU-ROC
+        ，PRO-score作为缺陷检测结果的评估指标，衡量本作品的性能，其中，3个指标均属于正向型指标；同时，异常热力图、热力实物融合图也可以直观反映待测物件图像是否存在缺陷，可以作为检测结果的可视化指标。
+        AUROC通过ROC曲线与坐标轴之间的面积大小来反应的性能，这是一个与阈值无关的指标，常用于二分类算法的评估。
+        PRO-score统计的是不同阈值下的区域重叠率,
+        以二值化后连通域和真值图之间的相对重叠率作为每一个阈值下的模型分类性能。
+        热力图通过对像素点或像素块着色来显示异常评分数据，按颜色映射的指定规则进行绘图。缺陷检测生成输出16px×16px尺度异常热力图、32px×32px尺度异常热力图、64px×64px尺度异常热力图、多尺度特征融合后的256px×256px综合异常热力图。此外，我们将综合异常热力图和待测物件图像进行合成，得到综合热力实物合成图。
+      </div>
+    </div>
+    <!-- box区域结束 -->
+    <!-- footer区域 -->
+    <div class="footer w">
+      <div class="copyright">
+        <div class="logo1">质检反馈站</div>
+        <p>准确、高效、精益化</p>
+      </div>
+      <div class="links">
+        <dl>
+          <dt>更多</dt>
+          <dd>
+            <a href="#">指导教师-保密</a>
+          </dd>
+          <dd><a href="#">联系方式-保密</a></dd>
+          <dd>
+            <a href="https://www2.renesas.cn/cn/zh" target="_blank"
+              >赞助机构-瑞萨</a
+            >
+          </dd>
+        </dl>
+      </div>
+    </div>
+    <!-- footer区域结束 -->
+  </body>
+</html>

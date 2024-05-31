@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>质检反馈站-案例展示3</title>
+    <style>
+      * {
+        padding: 0;
+        margin: 0;
+      }
+
+      /* 1.定义版心为公共类 */
+      body {
+        color: #fff;
+      }
+
+      .w {
+        width: 1265px;
+        margin: auto;
+      }
+
+      li {
+        list-style: none;
+      }
+
+      a {
+        text-decoration: none;
+      }
+
+      /* 2.头部 */
+      .header {
+        height: 42px;
+        background-color: #f3f5f7;
+        margin: auto;
+        margin-bottom: 10px;
+        border-radius: 2px;
+      }
+
+      .logo {
+        float: left;
+        width: 170px;
+        height: 42px;
+        line-height: 42px;
+        padding-left: 20px;
+        background-color: #559cc3;
+      }
+
+      /* 导航栏  li+a*/
+      .nav {
+        /* 定义为浮动之后，块级元素具有行内块元素的性质，有多少字或者内容，撑起盒子多少宽度。 */
+        float: left;
+        margin-left: 60px;
+      }
+
+      .nav ul li {
+        float: left;
+        margin: 0 15px;
+      }
+
+      .nav ul li a {
+        display: block;
+        height: 42px;
+        /* 撑开盒子，不指定宽度 */
+        padding: 0 10px;
+        line-height: 42px;
+        font-size: 18px;
+        color: black;
+      }
+
+      .nav ul li a:hover {
+        border-bottom: 2px solid #00a4ff;
+        color: #00a4ff;
+      }
+
+      .user {
+        float: right;
+        line-height: 42px;
+        margin-right: 30px;
+        font-size: 14px;
+        color: #666;
+      }
+
+      .titleh1 {
+        height: 80px;
+        line-height: 80px;
+        background-color: #559cc3;
+        /* 文字不加粗 */
+        font-weight: 600;
+        /* 让文字水平居中 */
+        text-align: center;
+        box-shadow: 0 2px 3px 3px rgba(0, 0, 0, 0.1);
+      }
+
+      .box {
+        background-color: #fff;
+      }
+
+      .box-hd {
+        height: 60px;
+        line-height: 60px;
+        margin-top: 20px;
+        background-color: #f3f5f7;
+        box-shadow: 0 2px 3px 3px rgba(0, 0, 0, 0.1);
+      }
+
+      .box-hd h2 {
+        float: left;
+        padding-left: 20px;
+        color: #3f4042;
+      }
+
+      .box-hd a {
+        float: right;
+        padding-right: 20px;
+        font-style: italic;
+        color: #498aad;
+      }
+
+      .box-hd a:hover {
+        text-decoration: underline;
+        color: #2b5166;
+      }
+
+      .box-bd1 {
+        height: 340px;
+        margin-top: 20px;
+      }
+
+      .box-bd1 ul li {
+        float: left;
+        margin-left: 123px;
+        margin-bottom: 23px;
+        width: 256px;
+        height: 320px;
+        background-color: #f3f5f7;
+        box-shadow: 3px 3px 3px 3px rgba(0, 0, 0, 0.1);
+        /* border-radius: 5px; */
+      }
+
+      .photo {
+        width: 256px;
+        height: 256px;
+      }
+
+      .box-bd1-instruction {
+        width: 256px;
+        height: 55px;
+        text-align: center;
+        line-height: 55px;
+        color: #000;
+      }
+
+      .footer {
+        height: 200px;
+        margin-top: 40px;
+        background-color: #f3f5f7;
+        padding-top: 50px;
+      }
+
+      .copyright {
+        float: left;
+        margin-left: 375px;
+      }
+
+      .copyright .logo1 {
+        float: left;
+        width: 120px;
+        height: 42px;
+        line-height: 42px;
+        text-align: center;
+        background-color: #559cc3;
+        border-radius: 2px;
+      }
+
+      .copyright p {
+        font-size: 12px;
+        color: #666;
+        margin-top: 60px;
+      }
+
+      .links {
+        float: right;
+        margin-right: 400px;
+      }
+
+      .links dl dt {
+        font-size: 16px;
+        color: #333;
+        margin-bottom: 5px;
+      }
+
+      .links dl dd a {
+        font-style: italic;
+        font-size: 12px;
+        color: #333;
+      }
+
+      .links dl dd a:hover {
+        text-decoration: underline;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- 头部区域 -->
+    <div class="w header">
+      <div class="logo">质检反馈站</div>
+      <div class="nav">
+        <ul>
+          <!-- li是块级元素，给li加浮动 -->
+          <!-- 给a设置宽（字数会影响）和高，转换成块级元素 -->
+          <li><a href="00-index.html">首页</a></li>
+          <li><a href="13-techinfo.html">技术简介</a></li>
+          <li><a href="14-help.html">帮助</a></li>
+          <li><a href="15-aboutus.html">关于我们-保密</a></li>
+        </ul>
+      </div>
+      <!-- 登录用户 -->
+      <div class="user"></div>
+    </div>
+    <!-- 头部区域结束 -->
+    <h1 class="titleh1 w">案例展示3：地毯</h1>
+    <!-- box区域 -->
+    <div class="box w">
+      <div class="box-hd">
+        <h2>输入输出系列图</h2>
+      </div>
+      <div class="box-bd1">
+        <ul>
+          <li>
+            <div class="photo">
+              <img src="pic/casepic/carpet/color_000.jpg" alt="" />
+            </div>
+            <div class="box-bd1-instruction">待测物件图像</div>
+          </li>
+          <li>
+            <div class="photo">
+              <img src="pic/casepic/carpet/color_000_amap.jpg" alt="" />
+            </div>
+            <div class="box-bd1-instruction">综合异常热力图</div>
+          </li>
+          <li>
+            <div class="photo">
+              <img src="pic/casepic/carpet/color_000_amap_on_img.jpg" alt="" />
+            </div>
+            <div class="box-bd1-instruction">综合热力实物合成图</div>
+          </li>
+        </ul>
+      </div>
+      <div class="box-hd">
+        <h2>各层次异常热力图</h2>
+      </div>
+      <div class="box-bd1">
+        <ul>
+          <li>
+            <div class="photo">
+              <img src="pic/casepic/carpet/color_000_am16.jpg" alt="" />
+            </div>
+            <div class="box-bd1-instruction">原16×16尺度异常热力图</div>
+          </li>
+          <li>
+            <div class="photo">
+              <img src="pic/casepic/carpet/color_000_am32.jpg" alt="" />
+            </div>
+            <div class="box-bd1-instruction">原32×32尺度异常热力图</div>
+          </li>
+          <li>
+            <div class="photo">
+              <img src="pic/casepic/carpet/color_000_am64.jpg" alt="" />
+            </div>
+            <div class="box-bd1-instruction">原64×64尺度异常热力图</div>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <!-- box区域结束 -->
+    <!-- footer区域 -->
+    <div class="footer w">
+      <div class="copyright">
+        <div class="logo1">质检反馈站</div>
+        <p>准确、高效、精益化</p>
+      </div>
+      <div class="links">
+        <dl>
+          <dt>更多</dt>
+          <dd>
+            <a href="#">指导教师-保密</a>
+          </dd>
+          <dd><a href="#">联系方式-保密</a></dd>
+          <dd>
+            <a href="https://www2.renesas.cn/cn/zh" target="_blank"
+              >赞助机构-瑞萨</a
+            >
+          </dd>
+        </dl>
+      </div>
+    </div>
+    <!-- footer区域结束 -->
+  </body>
+</html>

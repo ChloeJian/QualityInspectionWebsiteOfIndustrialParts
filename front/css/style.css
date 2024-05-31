@@ -1,0 +1,277 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+/* 1.布局定位属性
+2.盒子属性
+3.文本属性
+4.其他属性 */
+
+/* 流程：
+1.版心（可视区）
+2.页面布局第一准则 分析页面内的行模块标准流
+3.页面布局第二准则 列模块经常浮动布局，确定每个列的大小，之后确定列的位置
+4.HTML结构 */
+
+/* 1.定义版心为公共类 */
+body {
+    color: #fff;
+}
+
+.w {
+    width: 1265px;
+    margin: auto;
+}
+
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+/* 2.头部 */
+.header {
+    height: 42px;
+    background-color: #f3f5f7;
+    margin: auto;
+    margin-bottom: 10px;
+    border-radius: 2px;
+}
+
+.logo {
+    float: left;
+    width: 170px;
+    height: 42px;
+    line-height: 42px;
+    padding-left: 20px;
+    background-color: #559cc3;
+}
+
+/* 导航栏  li+a*/
+.nav {
+    /* 定义为浮动之后，块级元素具有行内块元素的性质，有多少字或者内容，撑起盒子多少宽度。 */
+    float: left;
+    margin-left: 60px;
+}
+
+.nav ul li {
+    float: left;
+    margin: 0 15px;
+}
+
+.nav ul li a {
+    display: block;
+    height: 42px;
+    /* 撑开盒子，不指定宽度 */
+    padding: 0 10px;
+    line-height: 42px;
+    font-size: 18px;
+    color: black;
+}
+
+.nav ul li a:hover {
+    border-bottom: 2px solid #00a4ff;
+    color: #00a4ff;
+}
+
+.user {
+    float: right;
+    line-height: 42px;
+    margin-right: 30px;
+    font-size: 14px;
+    color: #666;
+
+}
+/* 3.banner */
+.banner {
+    position: relative;
+    height: 510px;
+    /* background-color: #62b4e0; */
+    background: url(../pic/bgpic.png) no-repeat;
+    box-shadow: 0 2px 3px 3px rgba(0, 0, 0, 0.1);
+}
+
+/* .banner,.w {
+    height: 510x;
+    background-color: #62b4e0;
+    background: url(pictures/bgpic.png);
+} */
+
+.subnav {
+    float: left;
+    width: 190px;
+    height: 510px;
+    background-color: #3f4042;
+}
+
+.subnav ul li {
+    height: 40px;
+    line-height: 40px;
+    padding-left: 20px;
+    padding-top: 2px;
+}
+
+.subnav ul li a {
+    font-size: 14px;
+    color: white;
+}
+
+.subnav ul li a span {
+    float: right;
+    padding-right: 20px;
+}
+
+.subnav ul li a:hover {
+    color: #00a4ff;
+}
+
+.hittitle {
+    position: absolute;
+    left: 527.5px;
+    top: 112.5px;
+    font-size: 80px;
+}
+
+.hitexplan {
+    position: absolute;
+    left: 582px;
+    top: 230px;
+    color: #f3f5f7;
+    font-size: 32px;
+    font-weight: 200;
+}
+
+.btn{
+    position: absolute;
+    left: 603px;
+    top: 340px;
+    color: #f3f5f7;
+    font-size: 30px;
+    font-weight: 300;
+    background: linear-gradient(90deg,#172931,#03a9f4);
+    background-size: 150%;
+    box-shadow: 0 2px 3px 3px rgba(0, 0, 0, 0.1);
+    width: 250px;
+    height: 80px;
+    text-align: center;
+    line-height: 80px;
+    border-radius: 50px;
+}
+
+.stitle {
+    height: 100px;
+    background-color: #f3f5f7;
+    margin-top: 30px;
+    box-shadow: 0 2px 3px 3px rgba(0, 0, 0, 0.1);
+    /* 行高会继承，会继承给3个孩子 */
+    line-height: 100px;
+    color: #3f4042;
+    text-align: center;
+}
+
+.box {
+    background-color: #fff;
+}
+
+.box-hd {
+    height: 60px;
+    line-height: 60px;
+    margin-top: 20px;
+    background-color: #f3f5f7;
+    box-shadow: 0 2px 3px 3px rgba(0, 0, 0, 0.1);
+}
+.box-hd h2 {
+    float: left;
+    padding-left: 20px;
+    color: #3f4042;
+}
+.box-hd a {
+    float: right;
+    padding-right: 20px;
+    font-style: italic;
+    color: #498aad;
+}
+.box-hd a:hover {
+    text-decoration: underline;
+    color: #2b5166;
+}
+.box-bd1 {
+    height: 340px;
+    margin-top: 20px;
+}
+.box-bd1 ul li {
+    float: left;
+    margin-left: 123px;
+    margin-bottom: 23px;
+    width: 256px;
+    height: 320px;
+    background-color: #f3f5f7;
+    box-shadow: 3px 3px 3px 3px rgba(0, 0, 0, 0.1);
+    /* border-radius: 5px; */
+}
+.box-bd1-instruction {
+    display: none;
+    width: 256px;
+    height: 55px;
+    text-align: center;
+    line-height: 55px;
+    color: #000;
+}
+
+.photo {
+    display: none;
+    width: 256px;
+    height: 256px;
+}
+
+.footer {
+    height: 200px;
+    margin-top: 30px;
+    background-color: #f3f5f7;
+    padding-top: 50px;
+}
+
+.copyright {
+    float: left;
+    margin-left: 375px;
+}
+
+.copyright .logo1 {
+    float: left;
+    width: 120px;
+    height: 42px;
+    line-height: 42px;
+    text-align: center;
+    background-color: #559cc3;
+    border-radius: 2px;
+}
+
+.copyright p {
+    font-size: 12px;
+    color: #666;
+    margin-top: 60px;
+}
+
+.links {
+    float: right;
+    margin-right: 400px;
+}
+
+.links dl dt {
+    font-size: 16px;
+    color: #333;
+    margin-bottom: 5px;
+}
+
+.links dl dd a {
+    font-style: italic;
+    font-size: 12px;
+    color: #333;
+}
+
+.links dl dd a:hover {
+    text-decoration: underline;
+}
